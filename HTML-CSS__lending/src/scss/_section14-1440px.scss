@@ -1,0 +1,54 @@
+@media (min-width: 1440px) {
+  .section14 {
+    padding: 25px 18.1rem 120px;
+    max-width: 1600px;
+  }
+
+  .sec14bonus__title {
+    font-size: 36px;
+  }
+
+  .sec14MOVE__title {
+    font-size: 36px;
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 23px;
+    }
+  }
+
+  .sec14MOVE__text {
+    margin-bottom: 30px;
+
+    &::before {
+      left: -40px;
+    }
+  }
+
+  .sec14MOVE::before {
+    left: 280px;
+  }
+
+  .sec14PS__text {
+    margin-bottom: 40px;
+  }
+
+  .sec14BAY-form__submit {
+    font-size: 9px;
+    padding: 14px 22px;
+  }
+
+  .btn399 {
+    width: 64%;
+    font-size: 9px;
+    padding: 15px 35px;
+  }
+
+  .btn2 {
+    font-size: 9px;
+    //width: 50%;
+    //align-self: flex-start;
+    //margin-left: 45px;
+    padding: 15px 35px;
+  }
+}

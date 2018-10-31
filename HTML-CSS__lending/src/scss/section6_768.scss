@@ -1,0 +1,147 @@
+@media (min-width: 768px) {
+  .section6 {
+    width: 640px;
+    margin: auto;
+    padding: 50px 0;
+  }
+
+  .section6-card {
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+  .section6-card1{
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .section6-card__photo {
+    padding-top: 10px;
+  }
+
+  .section6-card__text {
+    width: 174px;
+    margin-top: 0;
+    padding-top: 0;
+    font-size: 8px;
+  }
+
+  .section6-card__photo {
+    width: 275px;
+  }
+
+  .section6-card__title {
+    font-size: 27px;
+    letter-spacing: 0.3px;
+    color: black;
+    width: 220px;
+    margin: 0;
+    padding-left: 30px;
+
+  }
+
+  .section6-before {
+    width: 210px;
+    margin-top: 25px;
+  }
+
+  .section6-before::before {
+    width: 26px;
+    margin-top: 25px;
+  }
+
+  .section6-card__box--center {
+    width: 305px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 0;
+    margin: 0 0 30px;
+  }
+
+  .section6-card__photo--order {
+    order: -1;
+    margin-top: 20px;
+    width: 274px;
+    height: 100px;
+    margin-right: 60px;
+  }
+
+  .section6-card__title--black {
+    font-size: 9px;
+    padding-top: 0;
+    width: auto;
+    margin: 0;
+  }
+
+  .section6-card__subtitle {
+    font-size: 9px;
+    margin-bottom: 15px;
+    width: 174px;
+  }
+
+  .section6-card__second {
+    width: 120px;
+    margin-right: 20px;
+
+  }
+
+  .section6-card__text--invisible {
+    display: inline-block;
+    margin-right: 20px;
+  }
+
+  .section6-card__span {
+    display: block;
+  }
+
+  .text--invisible {
+    display: inline;
+  }
+
+  .section6-card__p--right {
+    width: 170px;
+    font-size: 9px;
+    margin-bottom: 0;
+  }
+
+  .section6-card__text--right {
+    width: 250px;
+    margin-left: 30px;
+    padding-left: 0;
+    //margin-right: 88px;
+  }
+
+  .section6-picture{
+    width: 271px;
+  }
+
+  .section6-card__ph1{
+    width: 100% ;
+  }
+
+  .section6-card__ph2{
+    width: 100%;
+  }
+
+  .section6-card__box--center:last-child{
+    width: 305px;
+    margin-left: 0;
+  }
+
+  .section6-card__box--bottom{
+    align-self: flex-start;
+  }
+
+  //.section6-card__second{
+  //  width: 115px;
+  //}
+
+
+}

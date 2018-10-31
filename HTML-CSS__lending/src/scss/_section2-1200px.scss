@@ -1,0 +1,154 @@
+@media (min-width: 1200px) {
+  .section2 {
+    padding: 60px 0;
+  }
+
+  .facts {
+    width: 710px;
+  }
+
+  .facts__dry {
+    width: 228px;
+  }
+
+  .row-box {
+    justify-content: flex-start;
+    width: 228px;
+  }
+
+  .facts__dry--title {
+    letter-spacing: 1px;
+    font-size: 30px;
+    width: 228px;
+  }
+
+  .black-line {
+    margin-right: 16px;
+    width: 28px;
+  }
+
+  .facts__dry--text {
+    font-size: 13px;
+    width: 140px;
+  }
+
+  .facts__items {
+    width: 445px;
+  }
+
+  .items-box, .items {
+    padding: 0;
+    width: 165px;
+  }
+
+  .items-box {
+    margin-right: 35px;
+  }
+
+  .row {
+    width: 165px;
+  }
+
+  .items__title--blueBG {
+    font-size: 11px;
+  }
+
+  .items__text {
+    font-size: 11px;
+  }
+
+  .facts__diag {
+    width: 240px;
+    height: 121px;
+  }
+
+  .more {
+    width: 710px;
+  }
+
+  .first {
+    width: 310px;
+  }
+
+  .first__main {
+    width: 110px;
+    padding: 0;
+  }
+
+  .first__main-info {
+    margin-bottom: 0;
+    width: 180px;
+  }
+
+  .first__main-title {
+    font-size: 11px;
+  }
+
+  .first__main-info--title {
+    margin-bottom: 10px;
+    font-size: 14px;
+    width: 180px;
+  }
+
+  .first__main-info--text {
+    line-height: 1.5;
+    margin-bottom: 0;
+    font-size: 9px;
+    width: 180px;
+  }
+
+  .items__title--blueBG {
+    font-size: 10px;
+  }
+
+  .second, .help-bx2 {
+    width: 300px;
+  }
+
+  .second {
+    align-items: flex-start;
+  }
+
+  .second__main-title {
+    font-size: 34px;
+    margin-bottom: 3px;
+  }
+
+  .br2 {
+    margin-bottom: 21px;
+  }
+
+  .second__main-text {
+    width: 211px;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  .before-sqr {
+    width: 9px;
+    height: 9px;
+    background-color: #000;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .sqr {
+    width: 270px;
+  }
+
+  .help-bx {
+    align-items: flex-start;
+    padding: 0;
+  }
+
+  .second__title {
+    font-size: 10px;
+    margin-bottom: 10px;
+  }
+
+  .second__text {
+    font-size: 9px;
+    line-height: 1.5;
+  }
+}

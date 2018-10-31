@@ -1,0 +1,157 @@
+@media (min-width: 960px) {
+  .facts {
+    width: 800px;
+  }
+
+  .facts__dry {
+    width: 240px;
+  }
+
+  .row-box {
+    width: 240px;
+  }
+
+  .facts__dry--title {
+    letter-spacing: 1px;
+    font-size: 31px;
+    width: 240px;
+  }
+
+  .black-line {
+    width: 34px;
+  }
+
+  .facts__dry--text {
+    font-size: 16px;
+    width: 185px;
+  }
+
+  .facts__items {
+    width: 500px;
+  }
+
+  .items-box, .items {
+    padding: 0;
+    width: 190px;
+  }
+
+  .items-box {
+    margin-right: 35px;
+  }
+
+  .items-box:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  .row {
+    width: 190px;
+  }
+
+  .items__title--blueBG {
+    font-size: 11px;
+  }
+
+  .items__text {
+    font-size: 11px;
+  }
+
+  .facts__diag {
+    width: 270px;
+    height: 127px;
+    right: -45px;
+  }
+
+  .more {
+    width: 800px;
+    padding-top: 0;
+    margin-top: 90px;
+  }
+
+  .first {
+    width: 350px;
+  }
+
+  .pictsec2 {
+    width: 341px;
+    height: auto;
+    margin-bottom: 30px;
+  }
+
+  .first__main {
+    width: 115px;
+    padding: 0;
+  }
+
+  .first__main-info {
+    margin-bottom: 0;
+    width: 205px;
+  }
+
+  .first__main-title {
+    font-size: 12px;
+  }
+
+  .first__main-info--title {
+    margin-bottom: 10px;
+    font-size: 12px;
+    width: 200px;
+  }
+
+  .first__main-info--text {
+    line-height: 1.5;
+    margin-bottom: 0;
+    font-size: 10px;
+    width: 200px;
+  }
+
+  .items__title--blueBG {
+    font-size: 10px;
+  }
+
+  .second, .help-bx2 {
+    width: 390px;
+  }
+
+  .row-box {
+    margin-bottom: 44px;
+    width: 240px;
+  }
+
+  .second__main-title {
+    font-size: 34px;
+    margin-bottom: 3px;
+  }
+
+  .br2 {
+    margin-bottom: 32px;
+  }
+
+  .second__main-text {
+    width: 211px;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .help-bx2 {
+    margin-bottom: 30px;
+  }
+
+  .sqr {
+    width: 360px;
+  }
+
+  .help-bx {
+    align-items: flex-start;
+    padding: 0;
+  }
+
+  .second__title {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+
+  .second__text {
+    font-size: 10px;
+    line-height: 1.5;
+  }
+}

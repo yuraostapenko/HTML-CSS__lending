@@ -1,0 +1,36 @@
+@media (min-width: 960px) {
+  .section14 {
+    padding: 25px 5rem 120px;
+  }
+
+  .sec14bonus__title {
+    font-size: 34px;
+  }
+
+  .sec14MOVE__title {
+    font-size: 34px;
+  }
+
+  .sec14MOVE::before {
+    left: 250px;
+  }
+
+  .sec14BAY-form__submit {
+    font-size: 8.5px;
+    padding: 14px 22px;
+  }
+
+  .btn399 {
+    width: 66%;
+    font-size: 8.5px;
+    padding: 14px 35px;
+  }
+
+  .btn2 {
+    font-size: 8.5px;
+    //width: 50%;
+    //align-self: flex-start;
+    //margin-left: 45px;
+    padding: 13px 30px;
+  }
+}

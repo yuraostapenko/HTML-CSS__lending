@@ -1,0 +1,600 @@
+
+.footer {
+  border-top: 2px solid #464952;
+
+  &__wrapper--blue {
+    background-color: #181c27;
+  }
+
+  &__container {
+    padding: 0 1rem;
+  }
+}
+
+.footer__contacts {
+  padding-top: 25px;
+  margin-bottom: 15px;
+  @include flex(row, space-between, flex-start);
+
+  &--logo {
+    width: 27px;
+    height: 9px;
+
+    &__link {
+    }
+
+    &__icon {
+      display: block;
+      width: 27px;
+      height: 9px;
+    }
+  }
+}
+
+.footer__contacts--address {
+  //width: 50px;
+}
+
+.address__title {
+  margin-bottom: 5px;
+  @extend %Acrom-ExtraBold;
+  @include font($text-color-white, 5, uppercase);
+}
+
+.address__info {
+  line-height: 1.4;
+  @extend %Acrom-Regular;
+  @include font(#a2a2a2, 5, none);
+
+  &--span {
+    display: block;
+  }
+}
+
+.footer__contacts--tel {
+}
+
+.tel__title {
+  margin-bottom: 5px;
+  @extend %Acrom-ExtraBold;
+  @include font($text-color-white, 5, uppercase);
+}
+
+.tel__info {
+  line-height: 1.4;
+  @extend %Acrom-Regular;
+  @include font(#a2a2a2, 5, none);
+
+  &--span {
+    display: block;
+    @include font(#a2a2a2, 5, none);
+  }
+}
+
+.footer__connect {
+  padding-bottom: 25px;
+  width: 200px;
+  margin: 0 auto;
+  @include flex(row, space-between, flex-start);
+}
+
+.footer__social {
+  @include flex(column, flex-start, flex-start);
+}
+
+.footer__social--link {
+  margin-bottom: 5px;
+  @extend %Acrom-ExtraBold;
+  @include font($text-color-white, 5, none);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &__span {
+    @extend %Acrom-Bold;
+    @include font($text-color-white, 5, none);
+  }
+}
+
+.footer__btn {
+  @extend %Acrom-ExtraBold;
+  @include font($text-color-white, 5, uppercase);
+  border: 1px solid #1a314e;
+  padding: 4px 8px;
+  background-color: transparent;
+
+  &:hover {
+    background-color: rgb(23, 236, 255);
+    border: 1px solid #1a314e;
+  }
+
+  &:active {
+    background-color: rgb(6, 164, 178);
+    border: 1px solid #1a314e;
+  }
+}
+
+.footer__wrapper--grey {
+  background-color: #202020;
+}
+
+.footer__copyright {
+  @include flex(row, space-between, flex-start);
+  padding: 6px 0;
+}
+
+.footer__copyright--box {
+  @include flex(row, space-between, center);
+  width: 240px;
+}
+
+.footer__copyright--link {
+  @extend %Acrom-Regular;
+  @include font($text-color-grey, 4, none);
+  line-height: 15px;
+}
+
+.footer__devlogo {
+  &--icon {
+    width: 15px;
+    height: 15px;
+    fill: $text-color-white;
+
+    &:hover {
+      fill: #ff0000;
+    }
+  }
+}
+
+//!!!MEDIA 480!!!
+
+@media (min-width: 480px) {
+  .footer__contacts {
+    padding-top: 38px;
+
+    &--logo {
+      width: 41px;
+      height: 14px;
+
+      &__icon {
+        width: 41px;
+        height: 14px;
+      }
+    }
+  }
+
+  .footer__contacts--address {
+    //width: 60px;
+  }
+
+  .address__title {
+    @include font($text-color-white, 7, uppercase);
+  }
+
+  .address__info {
+    @include font(#a2a2a2, 7, none);
+  }
+
+  .tel__title {
+    @include font($text-color-white, 7, uppercase);
+  }
+
+  .tel__info {
+    @include font(#a2a2a2, 7, none);
+
+    &--span {
+      @include font(#a2a2a2, 7, none);
+    }
+  }
+
+  .footer__connect {
+    padding-bottom: 38px;
+    width: 280px;
+  }
+
+  .footer__social--link {
+    @include font($text-color-white, 7, none);
+
+    &__span {
+      @include font($text-color-white, 7, none);
+    }
+  }
+
+  .footer__btn {
+    @include font($text-color-white, 7, uppercase);
+  }
+
+  .footer__copyright {
+    padding: 6px 0;
+  }
+
+  .footer__copyright--box {
+  }
+
+  .footer__copyright--link {
+    @include font($text-color-grey, 6, none);
+  }
+}
+
+//!!!MEDIA 768!!!
+
+@media (min-width: 768px) {
+  .footer {
+    &__container {
+      padding: 0;
+      width: 640px;
+      margin: auto;
+    }
+  }
+
+  .footer__contacts {
+    width: 300px;
+    padding-top: 0;
+    margin-bottom: 0;
+
+    &--logo {
+      width: 57px;
+      height: 18px;
+
+      &__icon {
+        width: 57px;
+        height: 18px;
+      }
+    }
+  }
+
+  .footer__contacts--address {
+    //width: 70px;
+  }
+
+  .address__title {
+    margin-bottom: 10px;
+    @include font($text-color-white, 8, uppercase);
+  }
+
+  .address__info {
+    @include font(#a2a2a2, 8, none);
+  }
+
+  .tel__title {
+    margin-bottom: 10px;
+    @include font($text-color-white, 8, uppercase);
+  }
+
+  .tel__info {
+    @include font(#a2a2a2, 8, none);
+
+    &--span {
+      @include font(#a2a2a2, 8, none);
+    }
+  }
+
+  .footer__connect {
+    padding-bottom: 0;
+    width: 290px;
+    margin-left: 50px;
+  }
+
+  .footer__social--link {
+    margin-bottom: 7px;
+    @include font($text-color-white, 8, none);
+
+    &__span {
+      @include font($text-color-white, 8, none);
+    }
+  }
+
+  .footer__btn {
+    @include font($text-color-white, 8, uppercase);
+    border: 2px solid #1a314e;
+    padding: 11px 24px;
+
+    &:hover {
+      border: 2px solid #1a314e;
+    }
+
+    &:active {
+      border: 2px solid #1a314e;
+    }
+  }
+
+  .footer__container--flex {
+    @include flex(row, space-between, flex-start);
+    padding: 45px 0;
+  }
+
+  .footer__copyright {
+    padding: 8px 0;
+  }
+
+  .footer__copyright--box {
+    width: 300px;
+  }
+
+  .footer__copyright--link {
+    @include font($text-color-grey, 7, none);
+  }
+
+  .footer__devlogo {
+    &--icon {
+      width: 18px;
+      height: 18px;
+    }
+  }
+}
+
+//!!!MEDIA 960!!!
+
+@media (min-width: 960px) {
+  .footer {
+    &__container {
+      width: 800px;
+    }
+  }
+
+  .footer__contacts {
+    width: 350px;
+
+    &--logo {
+      width: 71px;
+      height: 22px;
+
+      &__icon {
+        width: 71px;
+        height: 22px;
+      }
+    }
+  }
+
+  .footer__contacts--address {
+    //width: 85px;
+  }
+
+  .address__title {
+    margin-bottom: 12px;
+    @include font($text-color-white, 10, uppercase);
+  }
+
+  .address__info {
+    @include font(#a2a2a2, 10, none);
+  }
+
+  .tel__title {
+    margin-bottom: 12px;
+    @include font($text-color-white, 10, uppercase);
+  }
+
+  .tel__info {
+    @include font(#a2a2a2, 10, none);
+
+    &--span {
+      @include font(#a2a2a2, 10, none);
+    }
+  }
+
+  .footer__connect {
+    width: 395px;
+    margin-left: 55px;
+  }
+
+  .footer__social--link {
+    @include font($text-color-white, 10, none);
+
+    &__span {
+      @include font($text-color-white, 10, none);
+    }
+  }
+
+  .footer__btn {
+    @include font($text-color-white, 9, uppercase);
+    padding: 14px 30px;
+  }
+
+  .footer__container--flex {
+    @include flex(row, space-between, flex-start);
+    padding: 60px 0;
+  }
+
+  .footer__copyright {
+    padding: 15px 0;
+  }
+
+  .footer__copyright--box {
+    width: 400px;
+  }
+
+  .footer__copyright--link {
+    @include font($text-color-grey, 9, none);
+    line-height: 23px;
+  }
+
+  .footer__devlogo {
+    &--icon {
+      width: 23px;
+      height: 23px;
+    }
+  }
+}
+
+//!!!MEDIA 1200!!
+
+@media (min-width: 1200px) {
+  .footer {
+    &__container {
+      width: 710px;
+    }
+  }
+
+  .footer__contacts {
+    width: 350px;
+
+    &--logo {
+      width: 63px;
+      height: 19px;
+
+      &__icon {
+        width: 63px;
+        height: 19px;
+      }
+    }
+  }
+
+  .footer__contacts--address {
+    //width: 75px;
+  }
+
+  .address__title {
+    margin-bottom: 11px;
+    @include font($text-color-white, 9, uppercase);
+  }
+
+  .address__info {
+    @include font(#a2a2a2, 9, none);
+  }
+
+  .tel__title {
+    margin-bottom: 11px;
+    @include font($text-color-white, 9, uppercase);
+  }
+
+  .tel__info {
+    @include font(#a2a2a2, 9, none);
+
+    &--span {
+      @include font(#a2a2a2, 9, none);
+    }
+  }
+
+  .footer__connect {
+    width: 305px;
+    margin-left: 55px;
+  }
+
+  .footer__social--link {
+    @include font($text-color-white, 9, none);
+
+    &__span {
+      @include font($text-color-white, 9, none);
+    }
+  }
+
+  .footer__btn {
+    @include font($text-color-white, 8, uppercase);
+    padding: 11px 25px;
+  }
+
+  .footer__container--flex {
+  }
+
+  .footer__copyright {
+    padding: 12px 0;
+  }
+
+  .footer__copyright--box {
+    width: 400px;
+  }
+
+  .footer__copyright--link {
+    @include font($text-color-grey, 7, none);
+    line-height: 20px;
+  }
+
+  .footer__devlogo {
+    &--icon {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+
+//!!!MEDIA 1440!!!!
+
+@media (min-width: 1440px) {
+  .footer {
+    &__container {
+      width: 855px;
+    }
+  }
+
+  .footer__contacts {
+    width: 350px;
+
+    &--logo {
+      width: 75px;
+      height: 23px;
+
+      &__icon {
+        width: 75px;
+        height: 23px;
+      }
+    }
+  }
+
+  .footer__contacts--address {
+    //width: 88px;
+  }
+
+  .address__title {
+    margin-bottom: 14px;
+    @include font($text-color-white, 10.5, uppercase);
+  }
+
+  .address__info {
+    @include font(#a2a2a2, 10.5, none);
+  }
+
+  .tel__title {
+    margin-bottom: 14px;
+    @include font($text-color-white, 10.5, uppercase);
+  }
+
+  .tel__info {
+    @include font(#a2a2a2, 10.5, none);
+
+    &--span {
+      @include font(#a2a2a2, 10.5, none);
+    }
+  }
+
+  .footer__connect {
+    width: 450px;
+  }
+
+  .footer__social--link {
+    margin-bottom: 8px;
+    @include font($text-color-white, 10.5, none);
+
+    &__span {
+      @include font($text-color-white, 10.5, none);
+    }
+  }
+
+  .footer__btn {
+    @include font($text-color-white, 9, uppercase);
+    padding: 14px 32px;
+  }
+
+  .footer__container--flex {
+  }
+
+  .footer__copyright {
+    padding: 16px 0;
+  }
+
+  .footer__copyright--box {
+    width: 400px;
+  }
+
+  .footer__copyright--link {
+    @include font($text-color-grey, 9, none);
+    line-height: 23px;
+  }
+
+  .footer__devlogo {
+    &--icon {
+      width: 23px;
+      height: 23px;
+    }
+  }
+}

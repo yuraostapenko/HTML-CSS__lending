@@ -1,0 +1,407 @@
+.section14 {
+  padding: 25px 2rem;
+  max-width: 1600px;
+  margin: auto;
+}
+
+.sec14bonus {
+  width: 100%;
+  margin: auto;
+  @include flex1(column, center, center);
+
+  &__title {
+    @include font($text-color-white, 12, uppercase);
+    @extend %Acrom-Bold;
+    padding: 0 2px;
+    display: inline-block;
+    background: $black;
+    text-align: center;
+  }
+
+  &__line {
+    position: relative;
+    width: 140px;
+    margin-left: 30px;
+    margin-bottom: 40px;
+  }
+
+  &__line::before {
+    content: "";
+    width: 13px;
+    height: 4px;
+    background: url(../img/black-line.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 10px;
+    left: -25px;
+  }
+
+  &__line-text {
+    @include font($black, 9, none);
+    @extend %Acrom-Medium;
+    line-height: 1.5;
+  }
+
+  &__number {
+    position: relative;
+    width: 160px;
+    margin-bottom: 25px;
+  }
+
+  &__number::before {
+    content: "";
+    width: 26px;
+    height: 26px;
+    background: url(../img/sec14-01.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 5px;
+    left: -35px;
+  }
+
+  &__number--02::before {
+    content: "";
+    width: 26px;
+    height: 26px;
+    background: url(../img/sec14-02.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 5px;
+    left: -35px;
+  }
+
+  &__number-title {
+    @include font($black, 9, uppercase);
+    @extend %Acrom-ExtraBold;
+    margin: 0;
+    line-height: 1.5;
+  }
+
+  &__number-text {
+    @include font($text-color-grey, 8, none);
+    @extend %Acrom-Regular;
+    margin: 10px 0 0;
+    line-height: 1.5;
+    text-align: justify;
+
+    &--bgblack {
+      color: $text-color-white;
+      background: #000;
+    }
+  }
+}
+
+.sec14BAY {
+  margin: auto;
+  width: 100%;
+  box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.15);
+  margin-bottom: 70px;
+}
+
+.sec14BAY-form {
+  @include flex1(column, center, flex-start);
+  padding: 40px;
+
+  &__label {
+    @include font($text-color-grey, 8, none);
+    @extend %Acrom-Bold;
+  }
+
+  &__input {
+    @include font($black, 8, uppercase);
+    @extend %Acrom-Bold;
+    border: none;
+    border-bottom: 1px solid $text-color-grey;
+    padding: 5px 5px;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  .sec14BAY-form__input--last {
+    margin-bottom: 20px;
+  }
+
+  &__submit {
+    @extend %Button-orange-320;
+
+    &:hover {
+      background-color: rgb(23, 236, 255);
+      box-shadow: 0 9px 13px 0 rgba(23, 236, 255, 0.26);
+    }
+
+    &:active {
+      background-color: rgb(6, 164, 178);
+      box-shadow: 0 9px 13px 0 rgba(6, 164, 178, 0.26);
+    }
+  }
+}
+
+.sec14BG {
+  position: relative;
+  @include flex1(column, center, center);
+  width: 100%;
+  background: #052139;
+  margin: 0 auto 25px;
+  padding: 50px 0;
+  box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.15);
+
+  &__content {
+    @include flex1(row, space-between, center);
+    width: 155px;
+    margin-bottom: 16px;
+  }
+
+  &__content:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.sec14BG::before {
+  content: "[  ВАЖНО!  ]";
+  position: absolute;
+  @include font($black, 12, uppercase);
+  @extend %Acrom-ExtraBold;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.sec14BG-item1 {
+  @include font($text-color-white, 9, none);
+  @extend %Acrom-Bold;
+  width: 65px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.sec14BG-price1 {
+  @include font($text-color-white, 10, uppercase);
+  @extend %Acrom-ExtraBold;
+  margin: 0;
+  position: relative;
+}
+
+.sec14BG-price1::before {
+  content: "";
+  width: 25px;
+  height: 2px;
+  background: url(../img/sec14grey-line.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  left: -30px;
+}
+
+.sec14BG-br {
+  width: 50px;
+}
+
+.sec14BG-item2 {
+  @include font($black, 10, none);
+  @extend %Acrom-Regular;
+  background: $blue;
+  margin: 0 0 2px;
+  display: inline-block;
+}
+
+.sec14BG-price2 {
+  @include font($text-color-white, 25, none);
+  @extend %Acrom-ExtraBold;
+}
+
+.sec14BG-price2--litle {
+  @include font($text-color-white, 12, none);
+  @extend %Acrom-ExtraBold;
+  padding-left: 3px;
+}
+
+.sec14IMPORTANT {
+  @include flex1(column, center, center);
+  width: 100%;
+  margin: 0 auto 50px;
+
+  &::before {
+    content: "[ВАЖНО!]";
+    position: absolute;
+    @include font($black, 27, uppercase);
+    @extend %Acrom-ExtraBold;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+  }
+
+  &__title {
+    display: none;
+  }
+}
+
+.sec14IMPORTANT-text {
+  width: 195px;
+  margin-bottom: 17px;
+
+  &__title {
+    @include font($black, 10, none);
+    @extend %Acrom-Bold;
+    line-height: 1.5;
+    margin: 0 0 13px;
+  }
+
+  &__text {
+    @include font($black, 9, none);
+    @extend %Acrom-Regular;
+  }
+
+  &__before {
+    position: relative;
+    width: 195px;
+    margin-bottom: 20px;
+
+    &--orange {
+      @include font($orange, 10, none);
+      @extend %Acrom-Regular;
+      line-height: 1.5;
+    }
+  }
+
+  &__before::before {
+    content: "";
+    width: 13px;
+    height: 20px;
+    background: url(../img/sec14-degline.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    top: 5px;
+    left: -25px;
+  }
+}
+
+.sec14MOVE {
+  @include flex1(column, center, center);
+  position: relative;
+  width: 145px;
+  margin: 0 auto 25px;
+
+  &::before {
+    content: "";
+    width: 50px;
+    height: 100px;
+    background: url(../img/sec14GO.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: -70px;
+  }
+
+  &__title {
+    @include font($black, 12, uppercase);
+    @extend %Acrom-ExtraBold;
+    margin: 0 0 6px;
+
+    &:last-child {
+      margin-bottom: 14px;
+    }
+  }
+
+  &__text {
+    position: relative;
+    display: block;
+    @include font($black, 10, none);
+    @extend %Acrom-Regular;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    margin-left: 15px;
+
+    &::before {
+      content: "";
+      width: 12px;
+      height: 3px;
+      background: url(../img/black-line.png);
+      position: absolute;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      top: 5px;
+      left: -25px;
+    }
+  }
+}
+
+.sec14MOVEhelp {
+  width: 125px;
+  margin: auto;
+}
+
+.sec14MOVE__btn {
+  @extend %Button-orange-320;
+
+  &:hover {
+    background-color: rgb(23, 236, 255);
+    box-shadow: 0 9px 13px 0 rgba(23, 236, 255, 0.26);
+  }
+
+  &:active {
+    background-color: rgb(6, 164, 178);
+    box-shadow: 0 9px 13px 0 rgba(6, 164, 178, 0.26);
+  }
+}
+
+.sec14PS {
+  margin: auto;
+  position: relative;
+  width: 100%;
+  padding-bottom: 25px;
+
+  &::before {
+    content: "P. S. :";
+    @include font($black, 13, uppercase);
+    @extend %Acrom-ExtraBold;
+  }
+
+  &__title {
+    @include font($black, 11, none);
+    @extend %Acrom-Bold;
+    line-height: 1.5;
+    margin: 0 0 18px;
+  }
+
+  &__title2 {
+    display: inline;
+    margin-bottom: 0;
+  }
+
+  &__text {
+    display: block;
+    @include font($black, 9, none);
+    @extend %Acrom-Regular;
+    line-height: 1.5;
+    margin-bottom: 18px;
+
+    &--orange {
+      @include font($orange, 10, none);
+      @extend %Acrom-Regular;
+      display: block;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+  }
+
+  &__text2 {
+    display: inline;
+    padding-left: 2px;
+    line-height: 1.5;
+  }
+}
+
+@import "section14-480px";
+@import "section14-768px";
+@import "section14-960px";
+@import "section14-1200px";
+@import "section14-1440px";

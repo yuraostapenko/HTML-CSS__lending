@@ -1,0 +1,236 @@
+
+.section2 {
+  padding: 25px 1rem;
+  margin: auto;
+}
+
+.facts {
+  margin: auto;
+  @include flex1 (column, flex-start, center);
+
+  &__dry {
+    @include flex1 (column, center, center);
+
+    &--title {
+      @include font ($black, 12, uppercase);
+      @extend %Acrom-ExtraBold;
+      margin-bottom: 25px;
+    }
+  }
+}
+
+.row-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 190px;
+  margin-bottom: 30px;
+}
+
+.black-line {
+  width: 12px;
+  height: 2px;
+  background: #000;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: 6px;
+}
+
+.facts__dry--text {
+  @include font ($black, 11, none);
+  @extend %Acrom-Bold;
+  width: 165px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.facts__items {
+  width: 288px;
+  @include flex1 (column, center, center);
+}
+
+.row {
+  @include flex1 (row, center, flex-start);
+}
+
+.orange {
+  margin-top: 10px;
+  width: 5px;
+  height: 5px;
+  background: $orange;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.items {
+  @include flex1 (column, center, flex-start);
+  padding-left: 10px;
+  width: 250px;
+
+  &__title {
+    @include font (#000, 16, uppercase);
+    @extend %Acrom-ExtraBold;
+    margin: 0 0 7px;
+
+    &--small {
+      @include font (#000, 10, uppercase);
+      @extend %Acrom-ExtraBold;
+    }
+
+    &--blueBG {
+      margin: 0 0 10px;
+      display: block;
+      @include font (black, 9, none);
+      @extend %Acrom-Medium;
+      background-color: $blue;
+    }
+  }
+
+  &__text {
+    @include font (#000, 9, none);
+    @extend %Acrom-Regular;
+    margin: 0 0 18px;
+    line-height: 1.5;
+  }
+}
+
+.facts__diag {
+  display: none;
+}
+
+.more {
+  padding: 0 1rem;
+}
+
+.section2__img {
+  width: 100%;
+  height: auto;
+}
+
+.first {
+  @include flex1 (column, center, center);
+  width: 288px;
+
+  &__img {
+    width: 100%;
+    margin: 0 0 20px;
+  }
+
+  &__main {
+    margin-bottom: 20px;
+    padding: 0 50px;
+  }
+
+  &__main-title {
+    @include font($text-color-white, 12, uppercase);
+    @extend %Acrom-ExtraBold;
+    background: #000;
+    padding: 0 2px;
+    margin: 0 0 5px;
+  }
+
+  &__main-info {
+    margin-bottom: 30px;
+    width: 288px;
+
+    &--title {
+      @include font($black, 11, none);
+      @extend %Acrom-Bold;
+      width: 288px;
+    }
+
+    &--text {
+      @include font($black, 10, none);
+      @extend %Acrom-Regular;
+      line-height: 1.5;
+      margin: 0;
+      width: 288px;
+    }
+  }
+}
+
+.pictsec2 {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.items__title--blueBG {
+  @include font($black, 10, none);
+  @extend %Acrom-Bold;
+  display: inline-block;
+  margin-bottom: 0;
+
+}
+
+.second {
+  @include flex1 (column, center, center);
+
+  &__main-text {
+    @include font($black, 11, none);
+    @extend %Acrom-Bold;
+    line-height: 1.5;
+    width: 165px;
+    margin: 0;
+  }
+
+  &__main-title {
+    @include font($text-color-white, 13, uppercase);
+    margin: 0 0 3px;
+    background: #000;
+    padding: 0 3px;
+    @extend %Acrom-Bold;
+  }
+
+  &__title {
+    @include font($black, 10, uppercase);
+    @extend %Acrom-ExtraBold;
+    margin: 0 0 11px;
+  }
+
+  &__text {
+    @include font($text-color-grey, 9, none);
+    @extend %Acrom-Regular;
+    margin: 0;
+    text-align: justify;
+    line-height: 1.5;
+  }
+}
+
+.help-bx {
+  @include flex1 (row, center, flex-start);
+  margin-bottom: 11px;
+}
+
+.help-bx2 {
+  @include flex1 (row, space-between, flex-start);
+  width: 288px;
+  margin-bottom: 19px;
+}
+
+.sqr {
+  width: 274px;
+}
+
+.before-sqr {
+  width: 5px;
+  height: 5px;
+  background: #000;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: 4px;
+}
+
+.br {
+  margin: 0;
+  display: inline-block;
+}
+
+@import "section2-480px";
+@import "section2-768px";
+@import "section2-960px";
+@import "section2-1200px";
+@import "section2-1440px";

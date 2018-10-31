@@ -1,0 +1,77 @@
+@media (min-width: 480px) {
+  .section-1 {
+    padding: 60px 0 40px;
+    @include flex(column, center, center);
+    background-image: url(../img/YOU.png);
+    background-repeat: no-repeat;
+    background-position: 25px 290px;
+  }
+
+  .text-title2 {
+    @include font($black, 20.53, uppercase);
+    line-height: 1.25;
+    text-align: left;
+    order: 4;
+    display: block;
+    width: 300px;
+    padding-bottom: 45px;
+  }
+
+  .section1-foto {
+    padding: 30px 0 45px;
+    width: 100%;
+  }
+
+  .text-text {
+    @include font($black, 13.5, none);
+    line-height: 1.444;
+    order: 1;
+    width: 448px;
+  }
+
+  .start-list--title {
+    @include font($black, 13.5, uppercase);
+    padding-bottom: 23px;
+  }
+
+  .text-title3 {
+    @include font($black, 14.79, uppercase);
+    padding-bottom: 17px;
+    width: 300px;
+  }
+
+  .text-title3::before {
+    content: "";
+    background-image: url(../img/Rec40.png);
+    width: 21px;
+    height: 3px;
+    display: inline-block;
+    margin-bottom: 5px;
+    margin-right: 1px;
+  }
+
+  .start-list-text {
+    @include font($black, 13.5, none);
+    padding-bottom: 22px;
+    width: 350px;
+  }
+
+  .start-list-text-bold {
+    @include font($black, 13.5, none);
+  }
+
+  .icon-text1::before {
+    content: "";
+    background-color: #000000;
+    width: 7px;
+    height: 7px;
+    display: block;
+    align-self: flex-start;
+    margin: 7px 5px 0 0;
+  }
+
+  .start-list-orange {
+    padding: 26px 70px 0;
+    @include font($orange, 13.5, none);
+  }
+}

@@ -1,0 +1,113 @@
+@media (min-width: 1440px) {
+  .container {
+    width: 855px;
+    margin: auto;
+  }
+
+  .section-1 {
+    width: 855px;
+    padding: 150px 0 75px;
+    background-image: url(../img/YOU.png);
+    background-repeat: no-repeat;
+    background-position: 25px 480px;
+  }
+
+  .section1__start-it {
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 320px;
+    flex-wrap: wrap;
+    width: 855px;
+    margin-bottom: 85px;
+  }
+
+  .start-it-foto {
+    order: 1;
+    width: 344px !important;
+    height: 322px !important;
+    padding: 0;
+  }
+
+  .text-text {
+    width: 345px;
+    order: 2;
+    font-size: 12px;
+    line-height: 1.5;
+    padding-bottom: 50px;
+  }
+
+  .text-title3 {
+    width: 215px;
+    order: 3;
+    font-size: 13.5px;
+    padding-bottom: 30px;
+  }
+
+  .text-title3::before {
+    content: "";
+    background-image: url(../img/Rec40.png);
+    width: 35px;
+    height: 3px;
+    display: inline-block;
+    margin-bottom: 3px;
+    margin-right: 20px;
+  }
+
+  .text-title2 {
+    order: 4;
+    width: 325px;
+    font-size: 36px;
+    padding: 0;
+  }
+
+  .section1-foto {
+    padding: 0;
+    width: 344px !important;
+    height: 322px !important;
+
+  }
+
+  .section1__start-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 855px;
+    height: 490px;
+
+  }
+
+  .start-list--title {
+    width: 165px;
+    height: 350px;
+    font-size: 22.5px;
+    margin-right: 40px;
+
+  }
+
+  .icon-text1 {
+    width: 195px;
+    margin-right: 30px;
+  }
+
+  .start-list-text {
+    font-size: 12px;
+    padding-bottom: 30px;
+  }
+
+  .start-list-text-bold {
+    font-size: 12px;
+  }
+
+  .icon-text1::before {
+    display: none;
+  }
+
+  .start-list-orange {
+    padding-left: 0;
+    padding-top: 50px;
+    font-size: 12px;
+    width: 160px;
+    text-align: left;
+  }
+}

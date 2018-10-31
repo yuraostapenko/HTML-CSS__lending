@@ -1,0 +1,722 @@
+.section7 {
+  max-width: 1440px;
+  margin: auto;
+  padding: 0 1rem 15px;
+}
+
+.section7-web {
+  width: 220px;
+  margin: auto;
+
+  &__img {
+    width: 100%;
+    height: auto;
+  }
+
+  &__development {
+    @extend %Acrom-ExtraBold;
+    text-transform: uppercase;
+    font-size: 12px;
+    display: block;
+    padding-bottom: 6px;
+  }
+}
+
+.section7-webi {
+  display: flex;
+  width: 220px;
+
+  &::before {
+    content: "";
+    background-color: black;
+    height: 2px;
+    width: 13px;
+    margin-top: 7px;
+  }
+
+  &__posibility {
+    @extend %Acrom-Medium;
+    line-height: 1.4;
+    font-size: 9px;
+    padding-left: 12px;
+    font-weight: 600;
+    width: 200px;
+    color: $black;
+  }
+}
+
+.section7-developer {
+  width: 297px;
+  margin: auto;
+  padding-top: 18px;
+}
+
+.section7-developer__photo {
+  width: 100%;
+  height: auto;
+  padding-bottom: 18px;
+}
+
+.section7-dev {
+  display: flex;
+  flex-direction: column;
+}
+
+.section7-dev::before {
+  content: "";
+  height: 5px;
+  margin-top: 8px;
+  margin-left: 43px;
+  display: list-item;
+}
+
+.section7-dev__web {
+  @extend %Acrom-ExtraBold;
+  text-transform: uppercase;
+  font-size: 10px;
+  padding-bottom: 15px;
+  padding-left: 10px;
+  margin-left: 30px;
+}
+
+.section7-developer__specialist {
+  @extend %Acrom-Regular;
+  font-size: 9px;
+  text-align: left;
+  width: 200px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  line-height: 1.5;
+  color: #3f4144;
+}
+
+.section7-steps {
+  width: 220px;
+  margin: auto;
+  background-image: url("../img/Untitled-61.png");
+  background-repeat: no-repeat;
+  background-position-x: -10%;
+  background-size: contain;
+}
+
+.section7-steps__title {
+  display: block;
+  padding-bottom: 15px;
+}
+
+.section7-steps__simple {
+  display: block;
+  @extend %Acrom-Bold;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: $text-color-white;
+  background-color: $black;
+  width: 125px;
+  margin: 0 auto 5px;
+
+}
+
+.section7-steps__start {
+  display: block;
+  @extend %Acrom-Bold;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: $black;
+  margin: auto;
+  width: 125px;
+}
+
+.section7-websites__create {
+  @extend %Acrom-Medium;
+  font-size: 9px;
+  margin-left: 20px;
+  line-height: 1.5;
+  font-weight: 600;
+}
+
+.section7-websites {
+  width: 220px;
+  display: flex;
+  padding-bottom: 40px;
+}
+
+.section7-websites::before {
+  content: "";
+  background-color: black;
+  height: 2px;
+  width: 13px;
+  margin-top: 8px;
+  padding-left: 10px;
+  color: $black;
+}
+
+.section7-tasks {
+  width: 220px;
+  margin: auto;
+}
+
+.section7-program {
+  display: flex;
+}
+
+.section7-install__title {
+  @extend %Acrom-ExtraBold;
+  font-size: 9px;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  padding-top: 8px;
+  padding-left: 8px;
+}
+
+.section7-install__programms {
+  @extend %Acrom-Regular;
+  font-size: 9px;
+  line-height: 1.5;
+  padding-left: 10px;
+}
+
+.section7-icon {
+  display: flex;
+  flex-direction: column;
+}
+
+.section7-icon::after {
+  content: "";
+  background-color: #16ebfe;
+  width: 7px;
+  height: 7px;
+  margin-left: 12px;
+}
+
+.section7-install {
+  display: flex;
+  flex-direction: column;
+}
+
+.section7-terms {
+  padding-top: 23px;
+  display: flex;
+}
+
+.section7-web-terms__title {
+  @extend %Acrom-ExtraBold;
+  font-size: 9px;
+  text-transform: uppercase;
+  padding-left: 5px;
+  padding-bottom: 21px;
+}
+
+.section7-elements {
+  display: flex;
+}
+
+.section7-toknow__title {
+  @extend %Acrom-ExtraBold;
+  font-size: 9px;
+  text-transform: uppercase;
+  width: 200px;
+  padding-left: 4px;
+  padding-bottom: 27px;
+}
+
+.section7-skills {
+  display: flex;
+}
+
+.section7-connect__title {
+  @extend %Acrom-ExtraBold;
+  font-size: 9px;
+  text-transform: uppercase;
+  padding-top: 3px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
+.section7-connect__beworking {
+  @extend %Acrom-Regular;
+  font-size: 9px;
+  padding-left: 10px;
+  padding-bottom: 32px;
+}
+
+.section7-final {
+  margin: auto;
+  display: flex;
+  width: 260px;
+}
+
+.section7-about__text {
+  @extend %Acrom-Medium;
+  font-size: 10px;
+  color: $orange;
+  line-height: 1.5;
+}
+
+//!!!!MEDIA 480!!!!!
+
+@media (min-width: 480px) {
+  .section7 {
+    margin: auto;
+    padding: 0 1rem 25px;
+  }
+
+  .section7-web {
+    width: 350px;
+  }
+
+  .section7-web__development {
+    font-size: 18px;
+  }
+
+  .section7-developer {
+    width: 448px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section7-developer__photo {
+    width: 100%;
+    height: auto;
+  }
+
+  .section7-pic {
+    width: 448px;
+    height: auto;
+  }
+
+  .section7-webi {
+    width: 270px;
+    margin-left: 40px;
+  }
+
+  .section7-webi::before {
+    margin-top: 10px;
+  }
+
+  .section7-webi__posibility {
+    font-size: 13px;
+    width: 390px;
+  }
+
+  .section7-web__title {
+    padding-top: 20px;
+    width: 280px;
+    margin: auto;
+  }
+
+  .section7-dev__web {
+    font-size: 14px;
+  }
+
+  .section7-developer__specialist {
+    font-size: 13px;
+    width: 260px;
+  }
+
+  .section7-dev::before {
+    margin-top: 11px;
+  }
+
+  .section7-steps__simple {
+    font-size: 18px;
+    width: 180px;
+    margin: 0;
+  }
+
+  .section7-steps__start {
+    font-size: 18px;
+    width: 180px;
+    margin: 0;
+  }
+
+  .section7-steps {
+    width: 240px;
+  }
+
+  .section7-websites {
+    width: 280px;
+  }
+
+  .section7-websites__create {
+    font-size: 13px;
+  }
+
+  .section7-tasks {
+    width: 240px;
+  }
+
+  .section7-install__title, .section7-web-terms__title, .section7-toknow__title, .section7-connect__title {
+    font-size: 13px;
+    width: 240px;
+  }
+
+  .section7-install__programms, .section7-connect__beworking {
+    font-size: 13px;
+  }
+
+  .section7-final {
+    width: 310px;
+  }
+
+  .section7-about__text {
+    font-size: 15px;
+    width: 300px;
+  }
+}
+
+//!!!!MEDIA 768!!!!!
+
+@media (min-width: 768px) {
+  .section7 {
+    width: 640px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 0 35px;
+  }
+
+  .section7-web {
+    display: flex;
+    width: 640px;
+  }
+
+  .section7-picture {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .section7-web__img {
+    width: 300px;
+  }
+
+  .section7-web__title {
+    width: 240px;
+    letter-spacing: 1px;
+  }
+
+  .section7-web__development {
+    font-size: 27px;
+    width: 306px;
+  }
+
+  .section7-webi__posibility {
+    width: 250px;
+    padding: 0;
+    margin: 20px 0 0 12px;
+  }
+
+  .section7-webi {
+    width: 300px;
+  }
+
+  .section7-between {
+    width: 320px;
+  }
+
+  .section7-webi::before {
+    width: 27px;
+    margin-top: 28px;
+  }
+
+  .section7-developer {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 640px;
+  }
+
+  .section7-dev {
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section7-dev::before {
+    width: 7px;
+    height: 7px;
+  }
+
+  .section7-dev__web {
+    margin-top: 20px;
+    font-size: 9px;
+    width: 135px;
+    margin-left: 20px;
+  }
+
+  .section7-developer__specialist {
+    font-size: 8px;
+    width: 180px;
+  }
+
+  .section7-bypictures {
+    position: relative;
+    top: -20%;
+  }
+
+  .section7-steps {
+    width: 280px;
+    height: 200px;
+    margin: 100px auto 0;
+    background-image: url("../img/Untitled-61.png");
+    background-repeat: no-repeat;
+    background-position-x: -10%;
+    background-size: contain;
+  }
+
+  .section7-websites__create {
+    width: 130px;
+    font-size: 9px;
+  }
+
+  .section7-websites::before {
+    height: 4px;
+    margin-left: 10px;
+  }
+
+  .section7-steps__title {
+    font-size: 27px;
+    width: 170px;
+  }
+
+  .section7-steps {
+    background-position-x: 110%;
+  }
+
+  .section7-tasks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 290px;
+    height: 200px;
+    margin: 100px 0 0;
+  }
+
+  .section7-install__title, .section7-web-terms__title, .section7-toknow__title, .section7-connect__title {
+    font-size: 9px;
+    width: 90px;
+  }
+
+  .section7-install__programms, .section7-connect__beworking {
+    font-size: 8px;
+    width: 100px;
+  }
+
+  .section7-install__programms {
+    padding-bottom: 25px;
+  }
+
+  .section7-terms {
+    padding-top: 5px;
+    padding-bottom: 55px;
+  }
+
+  .section7-connect__title {
+    padding-bottom: 5px;
+  }
+
+  .section7-connect {
+    margin-bottom: 20px;
+  }
+
+  .section7-final {
+    width: 260px;
+    margin-right: 40px;
+  }
+
+  .section7-about__text {
+    font-size: 9px;
+    width: 240px;
+  }
+}
+
+//!!!!!MEDIA 960!!!!
+
+@media (min-width: 960px) {
+  .section7 {
+    width: 800px;
+    margin: auto;
+    padding: 40px 0 40px;
+  }
+
+  .section7-web {
+    width: 800px;
+  }
+
+  .section7-dev__web {
+    font-size: 11px;
+  }
+
+  .section7-dev {
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  .section7-dev::before {
+    width: 7px;
+    height: 7px;
+    padding-left: 0;
+    margin-left: 18px;
+  }
+
+  .section7-dev__web {
+    margin-top: 20px;
+    font-size: 9px;
+    width: 135px;
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  .section7-developer__specialist {
+    font-size: 9px;
+    width: 195px;
+    margin-left: 0;
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+
+  .section7-web__development {
+    font-size: 33px;
+    width: 375px;
+  }
+
+  .section7-webi__posibility {
+    font-size: 11px;
+  }
+
+  .section7-websites__create {
+    font-size: 11px;
+    width: 150px;
+  }
+
+  .section7-steps__title {
+    font-size: 33px;
+    width: 240px;
+  }
+
+  .section7-steps {
+    background-position-x: 74%;
+    width: 340px;
+    margin: 100px 0 0;
+  }
+
+  .section7-tasks {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 370px;
+  }
+
+  .section7-developer {
+    padding-top: 0;
+    width: 800px;
+  }
+
+  .section7-bypictures {
+    position: relative;
+    top: 0;
+  }
+
+  .section7-steps__simple, .section7-steps__start {
+    font-size: 33px;
+    text-align: left;
+    display: inline;
+    margin-left: 0;
+  }
+
+  .section7-steps__start {
+    display: inline;
+  }
+
+  .section7-install__title, .section7-web-terms__title, .section7-toknow__title, .section7-connect__title {
+    font-size: 11px;
+    width: 142px;
+  }
+
+  .section7-install__programms, .section7-connect__beworking {
+    font-size: 9px;
+    width: 120px;
+  }
+
+  .section7-about__text {
+    font-size: 11px;
+    width: 280px;
+  }
+
+  .section7-final {
+    width: 260px;
+  }
+}
+
+//!!!!!MEDIA 1200 !!!!!
+
+@media (min-width: 1200px) {
+  .section7 {
+    width: 710px;
+    margin: auto;
+    padding: 50px 0 40px;
+  }
+
+  .section7-pic {
+    width: 345px;
+  }
+
+  .section7-bypictures {
+    position: relative;
+    top: 5%;
+    width: 345px;
+  }
+
+  .section7-steps {
+    width: 350px;
+  }
+
+  .section7-tasks {
+    width: 356px;
+  }
+}
+
+//!!!!MEDIA 1440 !!!!!
+
+@media (min-width: 1440px) {
+  .section7-web {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .section7-between {
+    width: 375px;
+  }
+
+  .section7-webi {
+    width: 375px;
+    margin: 0;
+  }
+
+  .section7 {
+    width: 855px;
+    margin: auto;
+  }
+
+  .section7-web__title {
+    width: 375px;
+    margin: 0;
+  }
+
+  .section7-dev {
+    width: 393px;
+  }
+
+  .section7-developer {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .section7-steps {
+    width: 495px;
+  }
+}
+

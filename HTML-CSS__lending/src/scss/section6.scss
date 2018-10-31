@@ -1,0 +1,119 @@
+.section6 {
+  max-width: 1440px;
+  margin: auto;
+  @include flex(column, center, center);
+  padding: 25px 1rem;
+}
+
+.section6-before::before {
+  content: '';
+  display: inline-block;
+  width: 13px;
+  height: 2px;
+  background-color: #000000;
+  margin-bottom: 0;
+  margin-right: 10px;
+  position: relative;
+  top: -20px;
+}
+
+.section6-card__title {
+  @extend %Acrom-ExtraBold;
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: black;
+  width: 150px;
+  text-transform: uppercase;
+  margin-left: 35px;
+}
+
+.section6-before {
+  @include flex(row, center, center);
+  margin: 10px 0 20px;
+}
+
+.section6-card__p {
+  @extend %Acrom-Medium;
+  font-size: 9px;
+  color: #3f4144;
+  line-height: 1.5;
+  width: 250px;
+}
+
+.section6-card__p--right {
+}
+
+.section6-card__title--black {
+  @extend %Acrom-ExtraBold;
+  font-size: 9px;
+  text-transform: uppercase;
+  color: white;
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.section6-card__part1 {
+  display: block;
+  background-color: black;
+  width: fit-content;
+  padding: 0 3px;
+  margin-bottom: 2px;
+}
+
+.section6-card__subtitle {
+  @extend %Acrom-Bold;
+  font-size: 9px;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+}
+
+.section6-card__box--center {
+  width: 275px;
+  margin-left: auto;
+  margin-bottom: 30px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.section6-card__text {
+  @extend %Acrom-Regular;
+  font-size: 9px;
+  color: #3f4144;
+  margin-top: 13px;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+}
+
+.section6-card__title {
+  background-color: white;
+}
+
+.section6-card__photo {
+  width: 296px;
+  height: 189px;
+}
+
+.section6-card__text--invisible{
+  display: none;
+}
+
+.text--invisible{
+  display: none;
+}
+
+.section6-card__span{
+  display: inline;
+}
+
+.section6-card__second{
+  width: 200px;
+}
+
+@import "sectoin6_480.scss";
+@import "section6_768.scss";
+@import "section6_960";
+@import "section6_1200";
+@import "section6_1440.scss";

@@ -1,0 +1,145 @@
+@media (min-width: 768px) {
+  .section14 {
+    padding: 25px 4rem 50px;
+    @include flex1(row, space-between, flex-start);
+    flex-wrap: wrap;
+  }
+
+  .sec14bonus {
+    align-items: flex-start;
+    width: 45%;
+    margin: 0 0 100px;
+
+    &__number {
+      margin-left: 35px;
+
+      &-title {
+        font-size: 11px;
+      }
+
+      &-text {
+        font-size: 10px;
+      }
+    }
+
+    &__title {
+      margin: 0 0 6px;
+      font-size: 27px;
+
+      &:last-child {
+        margin-bottom: 21px;
+      }
+    }
+
+    &__line {
+
+      margin-bottom: 25px;
+
+      &-text {
+        font-size: 12px;
+      }
+
+      &::before {
+        width: 29px;
+        height: 4px;
+        left: -30px;
+      }
+    }
+  }
+
+  .sec14BAY {
+    width: 45%;
+    margin: 0 0 100px;
+
+    &-form {
+      padding: 60px;
+
+      &__input {
+        margin-bottom: 16px;
+      }
+
+      &__submit {
+        font-size: 7px;
+        padding: 10px 15px;
+      }
+    }
+  }
+
+  .sec14BG {
+    width: 45%;
+    margin: 0 0 100px;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .sec14IMPORTANT {
+    position: relative;
+    width: 45%;
+    margin: 0 0 100px;
+
+    &::before {
+      display: block;
+    }
+  }
+
+  .sec14MOVE {
+    width: 45%;
+    margin: 0;
+
+    &__title {
+      font-size: 27px;
+
+      &:last-child {
+        margin-bottom: 27px;
+      }
+    }
+
+    &__text {
+      margin-bottom: 32px;
+
+      &::before {
+        width: 29px;
+        height: 4px;
+        left: -35px;
+      }
+    }
+
+    &::before {
+      left: 180px;
+      width: 120px;
+      height: 230px;
+      z-index: -1;
+    }
+  }
+
+  .sec14MOVEhelp {
+    width: 100%;
+  }
+
+  .btn399 {
+    width: 70%;
+    font-size: 7px;
+    padding: 11px 30px;
+  }
+
+  .btn2 {
+    font-size: 7px;
+    width: 50%;
+    align-self: flex-start;
+    margin-left: 45px;
+    padding: 10px 25px;
+  }
+
+  .sec14PS {
+    position: relative;
+    width: 45%;
+    margin: 0;
+
+    &::before {
+      position: absolute;
+      left: -65px;
+    }
+  }
+}

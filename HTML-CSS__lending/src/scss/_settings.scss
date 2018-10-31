@@ -1,0 +1,100 @@
+$text-color-white: #fff;
+
+$text-color-grey: #afb0b3;
+
+$orange: #ff6b08;
+
+$blue: #16ebfe;
+
+$black: #000;
+
+%Acrom-Bold {
+  font-family: 'Acrom', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+%Acrom-Regular {
+  font-family: 'Acrom', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+%Acrom-Medium {
+  font-family: 'Acrom', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+%Acrom-ExtraBold {
+  font-family: 'Acrom', sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+%container-320 {
+  padding: 0 1rem;
+}
+
+%container-480 {
+  padding: 0 1rem;
+}
+
+%container-768 {
+  width: 640px;
+  margin: auto;
+}
+
+%container-960 {
+  width: 800px;
+  margin: auto;
+}
+
+%container-1200 {
+  width: 710px;
+  margin: auto;
+}
+
+%container-1440 {
+  width: 855px;
+  margin: auto;
+}
+
+@mixin font($color, $f-sz, $t-trans) {
+  color: $color;
+  font-size: ($f-sz /16) + rem;
+  text-transform: $t-trans;
+}
+
+%Button-orange {
+  padding: 15px 25px;
+  background-color: $orange;
+  @extend %Acrom-ExtraBold;
+  @include font($text-color-white, 8, uppercase);
+  box-shadow: 0 14px 21px 0 rgba(196, 87, 15, 0.26);
+  border: none;
+  letter-spacing: 2px;
+}
+
+@mixin flex($f-dir, $j-cont, $a-items) {
+  display: flex;
+  flex-flow: $f-dir wrap;
+  justify-content: $j-cont;
+  align-items: $a-items;
+}
+
+@mixin flex1 ($f-dir, $j-cont, $a-items) {
+  display: flex;
+  flex-direction: $f-dir;
+  justify-content: $j-cont;
+  align-items: $a-items;
+}
+
+%Button-orange-320 {
+  padding: 8px 20px;
+  background-color: $orange;
+  @extend %Acrom-ExtraBold;
+  @include font($text-color-white, 8, uppercase);
+  box-shadow: 0 14px 21px 0 rgba(196, 87, 15, 0.26);
+  border: none;
+}
